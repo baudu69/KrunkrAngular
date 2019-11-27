@@ -1,11 +1,12 @@
-export class Visite {
-  IDVISITE: number;
-  IDRES: number;
-  IDGUIDE: number;
-  IDTYPE: number;
-  DESIVISITE: string;
-  DESCRIPTIONVISITE: string;
-  LIEU: string;
-  ROLE: string;
-  IMG: string;
+export class Visite
+{
+    idVisite: number;
+    idRes: number;
+    idGuide: number;
+    idType: number;
+    desVisite: string;
+    descriptionVisite: string;
+    lieu: string;
+    role: string;
+    img: string;
 }
