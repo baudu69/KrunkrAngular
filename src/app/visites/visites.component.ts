@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Visite } from '../metier/visite';
 import {VisiteService} from '../service/visite.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-visites',
@@ -11,9 +12,14 @@ export class VisitesComponent implements OnInit {
 
   visite: Visite;
   lesVisites: Array<Visite>;
-  constructor(private visiteService: VisiteService) { }
+  constructor(private visiteService: VisiteService, private router: Router) { }
 
   ngOnInit() {
+    if (localStorage.getItem('id').toString() === 'null')
+    {
+      this.router.navigate(['/connexion']);
+    }
+
     this.visiteService.chargerVisites().subscribe((data) => {this.lesVisites = data; }, (error) => {});
   }
 

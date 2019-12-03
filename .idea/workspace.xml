@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9394414-5395-400e-8f52-6d47355de4c2" name="Default Changelist" comment="ajoute de Service dans provider">
+    <list default="true" id="c9394414-5395-400e-8f52-6d47355de4c2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/deconnexion/deconnexion.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/deconnexion/deconnexion.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/deconnexion/deconnexion.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/deconnexion/deconnexion.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/metier/utilisateur.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/metier/utilisateur.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/service/utilisateur.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/service/utilisateur.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/utilisateurs/utilisateurs.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utilisateurs/utilisateurs.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/navbar/navbar.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/utilisateurs/utilisateurs.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utilisateurs/utilisateurs.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/visites/visites.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/visites/visites.component.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +21,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="baudu69 &lt;bastien.audu@lmdsio.fr&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1UCdJcLe7m8n4m2FPZivaufrgaY" />
@@ -87,7 +98,7 @@
       <updated>1574864447532</updated>
       <workItem from="1574864465036" duration="6610000" />
       <workItem from="1575363373495" duration="226000" />
-      <workItem from="1575363816187" duration="3896000" />
+      <workItem from="1575363816187" duration="5568000" />
     </task>
     <task id="LOCAL-00001" summary="ijik">
       <created>1574868043328</created>
@@ -131,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575366492910</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Liste des utilisateurs">
+      <created>1575368009460</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1575368009460</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +176,7 @@
     <MESSAGE value="gitignore de qualite2" />
     <MESSAGE value="ajoute de Service dans provider" />
     <MESSAGE value="cdxcxc" />
-    <option name="LAST_COMMIT_MESSAGE" value="cdxcxc" />
+    <MESSAGE value="Liste des utilisateurs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Liste des utilisateurs" />
   </component>
 </project>
