@@ -25,5 +25,10 @@ export class UtilisateurService {
     return this.http.post<any>(url, JSON.stringify(this.unUtilisateur));
   }
 
+  public getAllUsers(): Observable<any> {
+    const url = environment.apiURL + '/utilisateur/getAllUtilisateur';
+    return this.http.get<any>(url);
+  }
+
 
 }

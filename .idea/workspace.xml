@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9394414-5395-400e-8f52-6d47355de4c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/alsace.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/tourisme-alsace.png" afterDir="false" />
+    <list default="true" id="c9394414-5395-400e-8f52-6d47355de4c2" name="Default Changelist" comment="ajoute de Service dans provider">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/connexion/connexion.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/connexion/connexion.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/metier/visite.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/metier/visite.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/service/visite.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/service/visite.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/visite/visite.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/visite/visite.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/visite/visite.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/visite/visite.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/visites/visites.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/visites/visites.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/visites/visites.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/visites/visites.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/metier/utilisateur.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/metier/utilisateur.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/service/utilisateur.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/service/utilisateur.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/utilisateurs/utilisateurs.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utilisateurs/utilisateurs.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/utilisateurs/utilisateurs.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utilisateurs/utilisateurs.component.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,17 +24,13 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/node_modules/protractor" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Users\lgail\krunkr2\node_modules\typescript\lib" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\lgail\krunkr2\src\assets\images" />
-    </key>
+    <property name="ts.external.directory.path" value="C:\Users\baudu\Krunkr2\node_modules\typescript\lib" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -59,6 +47,7 @@
   <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="Tests (Krunkr)" type="JavaScriptTestRunnerKarma">
       <config-file value="$PROJECT_DIR$/karma.conf.js" />
+      <karma-package-dir value="$PROJECT_DIR$/node_modules/@angular/cli" />
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
@@ -66,6 +55,7 @@
     <configuration name="E2E Tests (Krunkr)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
+      <protractor-package value="$PROJECT_DIR$/node_modules/protractor" />
       <protractor-options value="" />
       <envs />
       <scope-kind value="ALL" />
@@ -96,7 +86,8 @@
       <option name="presentableId" value="Default" />
       <updated>1574864447532</updated>
       <workItem from="1574864465036" duration="6610000" />
-      <workItem from="1575363373495" duration="2479000" />
+      <workItem from="1575363373495" duration="226000" />
+      <workItem from="1575363816187" duration="3896000" />
     </task>
     <task id="LOCAL-00001" summary="ijik">
       <created>1574868043328</created>
@@ -119,14 +110,28 @@
       <option name="project" value="LOCAL" />
       <updated>1575363550120</updated>
     </task>
-    <task id="LOCAL-00004" summary="gitignore de qualitebvbvv">
-      <created>1575363642462</created>
+    <task id="LOCAL-00004" summary="gitignore de qualite2">
+      <created>1575364791093</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1575363642462</updated>
+      <updated>1575364791093</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ajoute de Service dans provider">
+      <created>1575366258364</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575366258364</updated>
+    </task>
+    <task id="LOCAL-00006" summary="cdxcxc">
+      <created>1575366492910</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575366492910</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +155,9 @@
     <MESSAGE value="ijik" />
     <MESSAGE value="CA MARCHE" />
     <MESSAGE value="gitignore de qualite" />
-    <MESSAGE value="gitignore de qualitebvbvv" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore de qualitebvbvv" />
+    <MESSAGE value="gitignore de qualite2" />
+    <MESSAGE value="ajoute de Service dans provider" />
+    <MESSAGE value="cdxcxc" />
+    <option name="LAST_COMMIT_MESSAGE" value="cdxcxc" />
   </component>
 </project>
