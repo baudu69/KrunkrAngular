@@ -22,16 +22,6 @@ export class ConnexionComponent implements OnInit {
   private unUtilisateur: Utilisateur;
   constructor(private router: Router, private httpClient: HttpClient, private unUserService: UtilisateurService) { }
 
-  valider(): void {
-   if (this.login !== 'b2sio2' || this.mdp !== 'slam4') {
-      this.lblMessage = 'erreur';
-      this.estCache = false;
-    } else {
-      this.estCache = true;
-      this.router.navigate(['/accueil']);
-    }
-  }
-
   connexion(): void {
   this.unUserService.getLogin(this.login, this.mdp).subscribe (
     data => {
