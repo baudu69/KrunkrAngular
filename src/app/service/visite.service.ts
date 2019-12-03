@@ -11,7 +11,7 @@ export class VisiteService {
 
   constructor(private http: HttpClient) { }
   public chargerVisites(): Observable<Visite[]> {
-    const url = 'http://localhost/gailleton/krunkr/public/api/visite/getAllVisite';
+    const url = environment.apiURL + '/visite/getAllVisite';
     return this.http.get<Visite[]>(url).pipe();
   }
 }
