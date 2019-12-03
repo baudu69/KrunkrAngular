@@ -9,14 +9,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./visites.component.css']
 })
 export class VisitesComponent implements OnInit {
-
-  visite: Visite;
   lesVisites: Array<Visite>;
   constructor(private visiteService: VisiteService, private router: Router) { }
 
   ngOnInit() {
-    if (localStorage.getItem('id').toString() === 'null')
-    {
+    if (localStorage.getItem('id').toString() === 'null') {
       this.router.navigate(['/connexion']);
     }
 

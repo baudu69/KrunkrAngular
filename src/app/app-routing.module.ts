@@ -7,7 +7,7 @@ import { ConnexionComponent } from './connexion/connexion.component';
 import {DeconnexionComponent} from './deconnexion/deconnexion.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/connexion', pathMatch: 'full' },
+  { path: '', redirectTo: '/accueil', pathMatch: 'full' },
   { path: 'connexion', component: ConnexionComponent },
   { path: 'utilisateurs', component: UtilisateursComponent },
   { path: 'visites', component: VisitesComponent },

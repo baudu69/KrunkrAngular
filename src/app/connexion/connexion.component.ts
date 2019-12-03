@@ -12,11 +12,12 @@ import { Observable } from 'rxjs';
 })
 export class ConnexionComponent implements OnInit {
 
-  Titre: string = 'Connexion';
-  lblLogin: string = 'Votre login : ';
-  lblMdp: string = 'Votre mot de passe :';
+  Titre = 'Connexion';
+  lblLogin = 'Votre login : ';
+  lblMdp = 'Votre mot de passe :';
   login: string;
   mdp: string;
+  typeAlert: string;
   lblMessage: string;
   estCache = true;
   private unUtilisateur: Utilisateur;
@@ -27,13 +28,16 @@ export class ConnexionComponent implements OnInit {
   this.unUserService.getLogin(this.login, this.mdp).subscribe (
     data => {
       this.unUtilisateur = data;
-      alert('Authentifié');
       localStorage.setItem('id', this.unUtilisateur.id.toString());
-      alert(localStorage.getItem('id'));
-      this.router.navigate(['/accueil']);
+      this.estCache = false;
+      this.lblMessage = 'Connexion effectué';
+      this.typeAlert = 'alert-success';
+      setTimeout( () => this.router.navigate(['/accueil']), 1000 );
     },
     Error => {
-      alert(Error.messages);
+      this.estCache = false;
+      this.lblMessage = 'Login ou mot de passe incorret';
+      this.typeAlert = 'alert-danger';
     });
   }
 
