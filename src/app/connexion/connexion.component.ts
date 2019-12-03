@@ -20,6 +20,7 @@ export class ConnexionComponent implements OnInit {
   lblMessage: string;
   estCache = true;
   private unUtilisateur: Utilisateur;
+
   constructor(private router: Router, private httpClient: HttpClient, private unUserService: UtilisateurService) { }
 
   connexion(): void {
@@ -27,6 +28,8 @@ export class ConnexionComponent implements OnInit {
     data => {
       this.unUtilisateur = data;
       alert('Authentifié');
+      localStorage.setItem('id', this.unUtilisateur.id.toString());
+      alert(localStorage.getItem('id'));
       this.router.navigate(['/accueil']);
     },
     Error => {

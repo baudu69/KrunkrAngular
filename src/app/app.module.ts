@@ -10,6 +10,7 @@ import { VisitesComponent } from './visites/visites.component';
 import { UtilisateursComponent } from './utilisateurs/utilisateurs.component';
 import { HttpConnComponent } from './class/http-conn/http-conn.component';
 import { HttpClientModule } from '@angular/common/http';
+import {VisiteService} from './service/visite.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    VisiteService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
