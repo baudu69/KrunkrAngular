@@ -1,4 +1,13 @@
 h1 {
-    color: blue;
-    text-align: center;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0px;
+  text-align: center;
+  color: #58585a;
+}
+
+img {
+  width: 400px;
 }

@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 @Component({
   selector: 'app-connexion',
   templateUrl: './connexion.component.html',
-  styleUrls: ['./connexion.component.css']
+  styleUrls: ['./connexion.component.css'],
 })
 export class ConnexionComponent implements OnInit {
 
