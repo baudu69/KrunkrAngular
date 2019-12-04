@@ -13,3 +13,10 @@ h2 {
 img {
     width: 400px;
 }
+
+.logoAlsace {
+    width: 125px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
