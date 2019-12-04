@@ -9,6 +9,7 @@ h1 {
 
 label {
     color: white;
+    font-size: 1.3em;
 }
 
 .wrapper {
@@ -57,7 +58,7 @@ label {
 .login input + i.fa {
     color: white;
     position: absolute;
-    margin-top: -47px;
+    margin-top: -32px;
     opacity: 0;
     left: 30px;
 }
