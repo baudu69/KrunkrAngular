@@ -13,8 +13,7 @@ export class UtilisateursComponent implements OnInit {
   constructor(private userService: UtilisateurService, private router: Router) { }
 
   ngOnInit() {
-    if (localStorage.getItem('id').toString() === 'null')
-    {
+    if (localStorage.getItem('id').toString() === 'null') {
       this.router.navigate(['/connexion']);
     }
     this.userService.getAllUsers().subscribe((data) => {this.lesUtilisateurs = data; }, (error) => {});

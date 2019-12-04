@@ -36,7 +36,7 @@ export class ConnexionComponent implements OnInit {
     },
     Error => {
       this.estCache = false;
-      this.lblMessage = 'Login ou mot de passe incorret';
+      this.lblMessage = 'Login ou mot de passe incorrect';
       this.typeAlert = 'alert-danger';
     });
   }

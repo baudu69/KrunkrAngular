@@ -1,13 +1,15 @@
 h1 {
-  text-align: center;
+    margin-top: 20px;
+    text-align: center;
 }
 
 h2 {
-  margin-top: 0px;
-  text-align: center;
-  color: #58585a;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2.5em;
+    color: #58585a;
 }
 
 img {
-  width: 400px;
+    width: 400px;
 }

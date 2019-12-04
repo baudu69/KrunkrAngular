@@ -1,0 +1,22 @@
+ul {
+    margin-top: 15px;
+    margin-left: auto;;
+    margin-right: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    font-size: 2em;
+    color: lightgrey;
+}
+
+a:visited {
+    color: lightgrey;
+}
