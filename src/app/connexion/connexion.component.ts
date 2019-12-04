@@ -30,8 +30,8 @@ export class ConnexionComponent implements OnInit {
       this.unUtilisateur = data;
       localStorage.setItem('id', this.unUtilisateur.id.toString());
       this.estCache = false;
-      this.lblMessage = 'Connexion effectué';
       this.typeAlert = 'alert-success';
+      this.lblMessage = 'Connexion effectué';
       setTimeout( () => this.router.navigate(['/accueil']), 1000 );
     },
     Error => {
