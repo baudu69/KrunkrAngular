@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9394414-5395-400e-8f52-6d47355de4c2" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/src/app/deconnexion/deconnexion.component.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/app/deconnexion/deconnexion.component.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/app/deconnexion/deconnexion.component.spec.ts" afterDir="false" />
@@ -13,6 +14,24 @@
       <change beforePath="$PROJECT_DIR$/src/app/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/navbar/navbar.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/utilisateurs/utilisateurs.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utilisateurs/utilisateurs.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/visites/visites.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/visites/visites.component.ts" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/assets/images/alsaceFlou.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logoAlsace.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/connexion/connexion.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/connexion/connexion.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/connexion/connexion.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/connexion/connexion.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/connexion/connexion.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/connexion/connexion.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/alsace.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/alsace.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,6 +105,9 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -97,8 +119,12 @@
       <option name="presentableId" value="Default" />
       <updated>1574864447532</updated>
       <workItem from="1574864465036" duration="6610000" />
+<<<<<<< Updated upstream
       <workItem from="1575363373495" duration="226000" />
       <workItem from="1575363816187" duration="5568000" />
+=======
+      <workItem from="1575363373495" duration="9392000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="ijik">
       <created>1574868043328</created>
@@ -149,7 +175,18 @@
       <option name="project" value="LOCAL" />
       <updated>1575368009460</updated>
     </task>
+<<<<<<< Updated upstream
     <option name="localTasksCounter" value="8" />
+=======
+    <task id="LOCAL-00005" summary="Louis le plus beau mais que ça fonctionne pas super bien">
+      <created>1575365921170</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575365921170</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+>>>>>>> Stashed changes
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,10 +210,16 @@
     <MESSAGE value="ijik" />
     <MESSAGE value="CA MARCHE" />
     <MESSAGE value="gitignore de qualite" />
+<<<<<<< Updated upstream
     <MESSAGE value="gitignore de qualite2" />
     <MESSAGE value="ajoute de Service dans provider" />
     <MESSAGE value="cdxcxc" />
     <MESSAGE value="Liste des utilisateurs" />
     <option name="LAST_COMMIT_MESSAGE" value="Liste des utilisateurs" />
+=======
+    <MESSAGE value="gitignore de qualitebvbvv" />
+    <MESSAGE value="Louis le plus beau mais que ça fonctionne pas super bien" />
+    <option name="LAST_COMMIT_MESSAGE" value="Louis le plus beau mais que ça fonctionne pas super bien" />
+>>>>>>> Stashed changes
   </component>
 </project>
