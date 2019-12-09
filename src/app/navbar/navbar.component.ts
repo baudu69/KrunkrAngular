@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {VisiteService} from '../service/visite.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -8,18 +10,19 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
   lien: string;
   texteLien: string;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
-    if (localStorage.getItem('id').toString() === 'null')
-    {
-      this.lien = 'connexion';
-      this.texteLien = 'Connexion';
-    }
-    else
-    {
-      this.lien = 'deconnexion';
+    if (localStorage.getItem('id').toString() === 'null') {
+        this.lien = 'connexion';
+        this.texteLien = 'Connexion';
+    } else {
+        this.lien = 'deconnexion';
         this.texteLien = 'Déconnexion';
+    }
+
+    if (localStorage.getItem('id').toString() === 'null') {
+      this.router.navigate(['/connexion']);
     }
   }
 

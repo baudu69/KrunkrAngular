@@ -1,7 +1,32 @@
-<nav>
-    <ul class="listeMenu">
-        <li><a routerLink="/visites">Gestion des visites</a></li>
-        <li><a routerLink="/utilisateurs">Gestion des utilisateurs</a></li>
-        <li><a routerLink="/{{lien}}">{{ texteLien }}</a></li>
-    </ul>
-</nav>
+<div class="area">
+    <nav class="main-menu">
+        <ul>
+            <li>
+                <a routerLink="/accueil">
+                    <i class="fa fa-home fa-2x"></i>
+                    <span class="nav-text">Accueil</span>
+                </a>
+            </li>
+            <li>
+                <a routerLink="/visites">
+                    <i class="fas fa-edit fa-2x"></i>
+                    <span class="nav-text">Gestion des visites</span>
+                </a>
+            </li>
+            <li>
+                <a routerLink="/utilisateurs">
+                    <i class="fas fa-user fa-2x"></i>
+                    <span class="nav-text">Gestion des utilisateurs</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="logout">
+            <li>
+                <a routerLink="/{{lien}}">
+                    <i class="fa fa-power-off fa-2x"></i>
+                    <span class="nav-text">{{ texteLien }}</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
