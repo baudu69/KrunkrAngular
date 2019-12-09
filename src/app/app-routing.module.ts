@@ -4,6 +4,7 @@ import { UtilisateursComponent } from './utilisateurs/utilisateurs.component';
 import { VisitesComponent } from './visites/visites.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ConnexionComponent } from './connexion/connexion.component';
+import { InscriptionComponent } from './inscription/inscription.component';
 import {DeconnexionComponent} from './deconnexion/deconnexion.component';
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'utilisateurs', component: UtilisateursComponent },
   { path: 'visites', component: VisitesComponent },
   { path: 'accueil', component: NavbarComponent },
+  { path: 'inscription', component: InscriptionComponent },
   { path: 'deconnexion', component: DeconnexionComponent },
 ];
 

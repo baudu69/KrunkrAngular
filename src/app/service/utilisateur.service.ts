@@ -30,5 +30,14 @@ export class UtilisateurService {
     return this.http.get<any>(url);
   }
 
+  public addUser(email, password, nom, prenom): Observable<any> {
+    const url = environment.apiURL + '/signUp';
+    this.unUtilisateur.mail = email;
+    this.unUtilisateur.mdp = password;
+    this.unUtilisateur.nom = nom;
+    this.unUtilisateur.prenom = prenom;
+    return this.http.post<any>(url, JSON.stringify(this.unUtilisateur));
+  }
+
 
 }

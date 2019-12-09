@@ -9,17 +9,7 @@ h1 {
 
 label {
     color: white;
-    font-size: 1.4em;
-}
-
-a {
-    color: white;
     font-size: 1.3em;
-    text-decoration : none;
-}
-
-a:visited{
-    color: white;
 }
 
 .wrapper {
@@ -29,7 +19,7 @@ a:visited{
     justify-content: center;
     width: 100%;
     min-height: 100%;
-    margin-top: 100px;
+    padding: 20px;
 }
 
 .login .title {
@@ -61,8 +51,7 @@ a:visited{
     border: 1px solid #ddd;
     transition: border-width 0.2s ease;
     border-radius: 2px;
-    font-size: 2em;
-    color: #585858;
+    color: #ccc;
 }
 
 /* intègre l'icone mais ne l'affichage pas */

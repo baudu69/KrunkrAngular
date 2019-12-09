@@ -12,6 +12,7 @@ import { HttpConnComponent } from './class/http-conn/http-conn.component';
 import { HttpClientModule } from '@angular/common/http';
 import {VisiteService} from './service/visite.service';
 import { DeconnexionComponent } from './deconnexion/deconnexion.component';
+import { InscriptionComponent } from './inscription/inscription.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,8 @@ import { DeconnexionComponent } from './deconnexion/deconnexion.component';
     NavbarComponent,
     VisitesComponent,
     UtilisateursComponent,
+    HttpConnComponent,
+    InscriptionComponent,
     HttpConnComponent,
     DeconnexionComponent
   ],
