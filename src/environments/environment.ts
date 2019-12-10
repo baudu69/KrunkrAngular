@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiURL: 'http://localhost/gailleton/krunkr/public/api'
+  apiURL: 'http://localhost/krunkr/public/api'
 };
 
 /*

@@ -1,0 +1,20 @@
+.container {
+    margin-top: 50px;
+}
+
+table {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+thead th{
+    font-size: 2em;
+    color: #585858;
+}
+
+tbody th {
+    color: #585858;
+    font-size: 1.5em;
+}

@@ -6,6 +6,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import {DeconnexionComponent} from './deconnexion/deconnexion.component';
+import { MesVisitesComponent } from './mes-visites/mes-visites.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/connexion', pathMatch: 'full' },
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'visites', component: VisitesComponent },
   { path: 'accueil', component: NavbarComponent },
   { path: 'inscription', component: InscriptionComponent },
-  { path: 'deconnexion', component: DeconnexionComponent },
+    { path: 'deconnexion', component: DeconnexionComponent },
+    { path: 'mesVisites', component: MesVisitesComponent },
 ];
 
 @NgModule({

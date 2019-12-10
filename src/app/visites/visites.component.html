@@ -7,6 +7,7 @@
                 <th scope="col">Id Visite</th>
                 <th scope="col">Nom Visite</th>
                 <th scope="col">Description Visite</th>
+                <th scope="row">Participer</th>
             </tr>
         </thead>
         <tbody>
@@ -14,6 +15,7 @@
                 <th scope="row">{{ uneVisite.IDVISITE }}</th>
                 <th scope="row">{{ uneVisite.DESIVISITE }}</th>
                 <th scope="row">{{ uneVisite.DESCRIPTIONVISITE }}</th>
+                <th scope="row"><button type="button" class="btn btn-primary" (click)="participer(uneVisite.IDVISITE)">Participer</button></th>
             </tr>
         </tbody>
     </table>

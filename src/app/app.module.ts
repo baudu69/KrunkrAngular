@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {VisiteService} from './service/visite.service';
 import { DeconnexionComponent } from './deconnexion/deconnexion.component';
 import { InscriptionComponent } from './inscription/inscription.component';
+import { MesVisitesComponent } from './mes-visites/mes-visites.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { InscriptionComponent } from './inscription/inscription.component';
     HttpConnComponent,
     InscriptionComponent,
     HttpConnComponent,
-    DeconnexionComponent
+    DeconnexionComponent,
+    MesVisitesComponent
   ],
   imports: [
     BrowserModule,

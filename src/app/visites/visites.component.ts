@@ -24,4 +24,10 @@ export class VisitesComponent implements OnInit {
     this.visiteService.chargerVisites().subscribe((data) => {this.lesVisites = data; }, (error) => {});
   }
 
+  participer(id: number): void {
+      this.visiteService.participer(id).subscribe((data) => { }, (error) => {});
+      alert('Participation enregistré');
+      this.router.navigate(['/mesVisites']);
+  }
+
 }
