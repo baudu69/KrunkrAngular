@@ -13,7 +13,7 @@
         <tr *ngFor="let uneVisite of lesVisites">
             <th scope="row">{{ uneVisite.desiVisite }}</th>
             <th scope="row">{{ uneVisite.descriptionVisite }}</th>
-            <th scope="row"><button type="button" class="btn btn-danger" (click)="desinscrire(uneVisite.idVisite)">Se Désinscrire</button></th>
+            <th scope="row" *ngIf="afficher == true"><button type="button" class="btn btn-danger" (click)="desinscrire(uneVisite.idVisite)">Se Désinscrire</button></th>
         </tr>
         </tbody>
     </table>

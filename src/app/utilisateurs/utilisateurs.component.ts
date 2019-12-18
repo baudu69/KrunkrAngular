@@ -36,7 +36,7 @@ export class UtilisateursComponent implements OnInit {
 
     supprimer(id: number): void {
         this.userService.delUser(id).subscribe((data) => { localStorage.setItem('jeton', data); }, (error) => {});
-        // location.reload();
+        location.reload();
     }
 
     validModifier(): void {

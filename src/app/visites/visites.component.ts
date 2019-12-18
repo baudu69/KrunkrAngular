@@ -21,7 +21,7 @@ export class VisitesComponent implements OnInit {
 
   participer(id: number): void {
       this.visiteService.participer(id).subscribe((data) => { localStorage.setItem('jeton', data); }, (error) => {});
-      alert('Participation enregistré');
+      alert('Votre participation a été enregistré');
       location.reload();
   }
 
