@@ -13,12 +13,12 @@ export class VisiteService {
 
   constructor(private http: HttpClient) { }
   public chargerVisites(): Observable<Visite[]> {
-    const url = environment.apiURL + '/visite/getAllVisite';
+    const url = environment.apiURL + '/visite/getAllVisite/' + localStorage.getItem('id') + '/' + localStorage.getItem('jeton');
     return this.http.get<Visite[]>(url).pipe();
   }
 
     public chargerMesVisites(): Observable<Visite[]> {
-        const url = environment.apiURL + '/visite/getAllVisiteUser/' + localStorage.getItem('id');
+        const url = environment.apiURL + '/visite/getAllVisiteUser/' + localStorage.getItem('id') + '/' + localStorage.getItem('jeton');
         return this.http.get<Visite[]>(url).pipe();
     }
 
@@ -26,6 +26,8 @@ export class VisiteService {
       const url = environment.apiURL + '/participation/add';
       this.uneParticipation.idVisite = idVisite;
       this.uneParticipation.id = parseInt(localStorage.getItem('id'), 10);
+      this.uneParticipation.idJeton = parseInt(localStorage.getItem('id'), 10);
+      this.uneParticipation.jeton = localStorage.getItem('jeton');
       return this.http.post(url, JSON.stringify(this.uneParticipation));
   }
 
@@ -33,6 +35,8 @@ export class VisiteService {
         const url = environment.apiURL + '/participation/del';
         this.uneParticipation.idVisite = idVisite;
         this.uneParticipation.id = parseInt(localStorage.getItem('id'), 10);
+        this.uneParticipation.idJeton = parseInt(localStorage.getItem('id'), 10);
+        this.uneParticipation.jeton = localStorage.getItem('jeton');
         return this.http.post(url, JSON.stringify(this.uneParticipation));
     }
 }

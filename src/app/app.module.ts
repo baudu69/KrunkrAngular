@@ -14,6 +14,7 @@ import {VisiteService} from './service/visite.service';
 import { DeconnexionComponent } from './deconnexion/deconnexion.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { MesVisitesComponent } from './mes-visites/mes-visites.component';
+import { ModifVisiteComponent } from './modif-visite/modif-visite.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MesVisitesComponent } from './mes-visites/mes-visites.component';
     InscriptionComponent,
     HttpConnComponent,
     DeconnexionComponent,
-    MesVisitesComponent
+    MesVisitesComponent,
+    ModifVisiteComponent
   ],
   imports: [
     BrowserModule,

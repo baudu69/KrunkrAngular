@@ -16,18 +16,13 @@ export class VisitesComponent implements OnInit {
     if (localStorage.getItem('id').toString() === 'null') {
       this.router.navigate(['/connexion']);
     }
-
-    this.visiteService.chargerVisites().subscribe((data) => {this.lesVisites = data; }, (error) => {});
-  }
-
-  charger(): void {
-    this.visiteService.chargerVisites().subscribe((data) => {this.lesVisites = data; }, (error) => {});
+    this.visiteService.chargerVisites().subscribe((data) => {this.lesVisites = data; localStorage.setItem('jeton', this.lesVisites[0].jeton); }, (error) => {this.router.navigate(['/connexion']); });
   }
 
   participer(id: number): void {
-      this.visiteService.participer(id).subscribe((data) => { }, (error) => {});
+      this.visiteService.participer(id).subscribe((data) => { localStorage.setItem('jeton', data); }, (error) => {});
       alert('Participation enregistré');
-      this.router.navigate(['/mesVisites']);
+      location.reload();
   }
 
 }

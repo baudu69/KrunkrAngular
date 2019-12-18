@@ -1,20 +1,47 @@
 <app-navbar></app-navbar>
 
-<div class="container">
+<div class="container" *ngIf="isModif == false">
     <table class="table">
         <thead>
             <tr>
+                <th scope="col">Id</th>
                 <th scope="col">Email</th>
                 <th scope="col">Nom</th>
                 <th scope="col">Prénom</th>
+                <th scope="col">Modifier Utilisateur</th>
+                <th scope="col">Supprimer Utilisateur</th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let unUser of lesUtilisateurs">
+                <th scope="col">{{ unUser.id }}</th>
                 <th scope="row">{{ unUser.mail }}</th>
                 <th scope="row">{{ unUser.nom }}</th>
                 <th scope="row">{{ unUser.prenom }}</th>
+                <th scope="row"><button type="button" class="btn btn-primary"(click)="modifier(unUser.id)">Modifier</button></th>
+                <th scope="row"><button type="button" class="btn btn-danger"(click)="supprimer(unUser.id)">Supprimer</button></th>
             </tr>
         </tbody>
     </table>
 </div>
+
+<div class="wrapper" *ngIf="isModif == true">
+    <form class="login" name="frmLogin" (ngSubmit)="validModifier()">
+        <input type="hidden" id="id" name="id" class="form-control" value="{{this.id}}" [(ngModel)]="id"/>
+        <div class="form-group">
+            <label for="login">Nom : </label>
+            <input type="text" id="nom" name="nom" class="form-control" value="{{this.nom}}"[(ngModel)]="nom"/>
+            <i class="fa fa-address-book"></i>
+        </div>
+        <div class="form-group">
+            <label for="login">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" class="form-control" value="{{this.prenom}}"[(ngModel)]="prenom"/>
+            <i class="fa fa-address-card"></i>
+        </div>
+        <div class="form-group">
+            <button class="state" type="submit"><i class="fas fa-check-circle"></i> Valider</button>
+        </div>
+    </form>
+</div>
+
+

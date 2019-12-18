@@ -1,14 +1,14 @@
 export class Visite
 {
-    IDVISITE: number;
-    DESIVISITE: number;
+    idVisite: number;
+    desiVisite: number;
     IDRES: number;
-    IDGUIDE: number;
-    IDTYOE: number;
+    idGuide: number;
+    idtype: number;
     DESVISITE: string;
-    DESCRIPTIONVISITE: string;
+    descriptionVisite: string;
     DATEHEURE: string;
-    LIEU: string;
-    ROLE: string;
+    $lieu: string;
+    jeton: string;
     IMG: string;
 }

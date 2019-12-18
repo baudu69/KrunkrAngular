@@ -17,12 +17,11 @@ export class MesVisitesComponent implements OnInit {
         if (localStorage.getItem('id').toString() === 'null') {
             this.router.navigate(['/connexion']);
         }
-
-        this.visiteService.chargerMesVisites().subscribe((data) => {this.lesVisites = data; }, (error) => {});
+        this.visiteService.chargerMesVisites().subscribe((data) => {this.lesVisites = data; localStorage.setItem('jeton', this.lesVisites[0].jeton);}, (error) => {this.router.navigate(['/connexion']); });
     }
 
     desinscrire(id: number): void {
-        this.visiteService.desinscrire(id).subscribe((data) => { }, (error) => {});
+        this.visiteService.desinscrire(id).subscribe((data) => { localStorage.setItem('jeton', data); }, (error) => {});
         alert('Participation enregistré');
         location.reload();
 

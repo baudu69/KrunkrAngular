@@ -29,6 +29,7 @@ export class ConnexionComponent implements OnInit {
     data => {
       this.unUtilisateur = data;
       localStorage.setItem('id', this.unUtilisateur.id.toString());
+      localStorage.setItem('jeton', this.unUtilisateur.jeton.toString());
       this.estCache = false;
       this.typeAlert = 'alert-success';
       this.lblMessage = 'Connexion effectué';

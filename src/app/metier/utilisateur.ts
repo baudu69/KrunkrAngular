@@ -6,4 +6,6 @@ export class Utilisateur
     public nom: string;
     public prenom: string;
     public role: string;
+    public jeton: string;
+    idJeton: number;
 }
