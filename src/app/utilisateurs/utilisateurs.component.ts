@@ -28,10 +28,9 @@ export class UtilisateursComponent implements OnInit {
   }
 
   modifier(id: number): void {
-      this.isModif = true;
       this.unUtilisateur = new Utilisateur();
       this.id = id;
-      this.userService.getUserById(id).subscribe((data) => { this.nom = data.nom; this.prenom = data.prenom; localStorage.setItem('jeton', data.jeton); }, (error) => { });
+      this.userService.getUserById(id).subscribe((data) => { this.nom = data.nom; this.prenom = data.prenom; localStorage.setItem('jeton', data.jeton); this.isModif = true;}, (error) => { });
     }
 
     supprimer(id: number): void {
