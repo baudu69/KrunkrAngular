@@ -11,20 +11,25 @@ import { Router } from '@angular/router';
 export class MesVisitesComponent implements OnInit {
 
     lesVisites: Array<Visite>;
+    afficher: boolean;
     constructor(private visiteService: VisiteService, private router: Router) { }
 
     ngOnInit() {
+        this.afficher = true;
         if (localStorage.getItem('id').toString() === 'null') {
             this.router.navigate(['/connexion']);
         }
-        this.visiteService.chargerMesVisites().subscribe((data) => {this.lesVisites = data; localStorage.setItem('jeton', this.lesVisites[0].jeton);}, (error) => {this.router.navigate(['/connexion']); });
+        this.visiteService.chargerMesVisites().subscribe((data) => {this.lesVisites = data; localStorage.setItem('jeton', this.lesVisites[0].jeton); if (this.lesVisites[0].idVisite == null) {
+            this.afficher = false;
+        }}, (error) => {this.router.navigate(['/connexion']); });
+
+
     }
 
     desinscrire(id: number): void {
         this.visiteService.desinscrire(id).subscribe((data) => { localStorage.setItem('jeton', data); }, (error) => {});
-        alert('Participation enregistré');
+        alert('Votre désinscription a été enregistré');
         location.reload();
-
     }
 
 }
