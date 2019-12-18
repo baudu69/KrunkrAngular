@@ -30,17 +30,17 @@ export class UtilisateursComponent implements OnInit {
   modifier(id: number): void {
       this.isModif = true;
       this.unUtilisateur = new Utilisateur();
-      this.userService.getUserById(id).subscribe((data) => { this.nom = data.nom; this.prenom = data.prenom; localStorage.setItem('jeton', data.jeton); }, (error) => { });
       this.id = id;
+      this.userService.getUserById(id).subscribe((data) => { this.nom = data.nom; this.prenom = data.prenom; localStorage.setItem('jeton', data.jeton); }, (error) => { });
     }
 
     supprimer(id: number): void {
-        this.userService.delUser(id).subscribe((data) => { localStorage.setItem('jeton', data); }, (error) => {});
-        location.reload();
+        this.userService.delUser(id).subscribe((data) => { localStorage.setItem('jeton', data); location.reload();}, (error) => {});
+        console.log(localStorage.getItem('jeton'));
     }
 
     validModifier(): void {
-      this.unUserService.updateUser(this.id, this.nom, this.prenom).subscribe((data) => { localStorage.setItem('jeton', data); }, (error) => {alert(error); });
-      location.reload();
+      this.unUserService.updateUser(this.id, this.nom, this.prenom).subscribe((data) => { localStorage.setItem('jeton', data); location.reload(); }, (error) => {alert(error); });
+
     }
 }

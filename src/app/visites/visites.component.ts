@@ -20,9 +20,9 @@ export class VisitesComponent implements OnInit {
   }
 
   participer(id: number): void {
-      this.visiteService.participer(id).subscribe((data) => { localStorage.setItem('jeton', data); }, (error) => {});
+      this.visiteService.participer(id).subscribe((data) => { localStorage.setItem('jeton', data); location.reload(); }, (error) => {});
       alert('Votre participation a été enregistré');
-      location.reload();
+
   }
 
 }

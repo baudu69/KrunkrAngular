@@ -27,9 +27,9 @@ export class MesVisitesComponent implements OnInit {
     }
 
     desinscrire(id: number): void {
-        this.visiteService.desinscrire(id).subscribe((data) => { localStorage.setItem('jeton', data); }, (error) => {});
+        this.visiteService.desinscrire(id).subscribe((data) => { localStorage.setItem('jeton', data); location.reload();}, (error) => {});
         alert('Votre désinscription a été enregistré');
-        location.reload();
+
     }
 
 }
